@@ -1,0 +1,28 @@
+<h1>{{titleName}}</h1>
+<dl>
+  <td>Nombre: </td>
+  <dd>{{name}} </dd>
+
+  <td>Edad: </td>
+  <dd> {{age}} </dd>
+
+  <td> Método: </td>
+  <dd> {{7*9}}</dd>
+
+
+  <td> Capitalización: </td>
+  <dd> {{capitalizedName}} </dd>
+</dl>
+
+
+<button *ngIf="name === 'Negro' "  class="btn btn-primary mx-2" (click)="cambiarNombre()">
+  Cambiar nombre
+</button>
+<br><br>
+<button class="btn btn-primary mx-2" (click)="cambiarEdad()">
+  Cambiar edad
+</button>
+<br><br>
+<button class="btn btn-danger mx-2" (click)="resetAll()">
+  Resetear
+</button>
